@@ -21,6 +21,7 @@ const Login = () => {
       .then((result) => {
         updateProfile(result.user, { displayName: displayName });
         console.log(result, "Sign Up!!!");
+        router.push("/");
       })
       .catch((err) => console.log(err));
   };
