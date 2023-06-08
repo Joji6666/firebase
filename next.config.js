@@ -5,13 +5,13 @@ const nextConfig = {
   images: {
     loader: "akamai",
     path: "/",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+      },
+    ],
   },
-  remotePatterns: [
-    {
-      protocol: "https",
-      hostname: "firebasestorage.googleapis.com",
-    },
-  ],
 };
 
 module.exports = nextConfig;
